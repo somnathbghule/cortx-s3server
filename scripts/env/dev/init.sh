@@ -123,6 +123,9 @@ rpm -q s3cmd && rpm -e s3cmd --nodeps
 #   yum install @development -y
 # fi
 
+# Erase old haproxy rpm and later install latest haproxy version 1.8.14
+rpm -q haproxy && rpm -e haproxy
+
 cd $BASEDIR
 
 # Attempt ldap clean up since ansible openldap setup is not idempotent
