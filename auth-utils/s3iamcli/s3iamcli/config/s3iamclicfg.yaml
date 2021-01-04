@@ -18,9 +18,9 @@
 #
 
 ENDPOINTS:
-    IAM: http://iam.seagate.com:9080
+    IAM: http://iam.seagate.com:28050
     IAM_HTTPS: https://iam.seagate.com:9443
-    STS: http://sts.seagate.com:9080
+    STS: http://sts.seagate.com:28050
     STS_HTTPS: https://sts.seagate.com:9443
 
 DEFAULT_REGION: us-west2
