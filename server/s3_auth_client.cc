@@ -715,9 +715,9 @@ bool S3AuthClient::setup_auth_request_body() {
       }
     }
   }
-  if (entity_path == "/" && S3AuthClientOpType::policyvalidation == op_type) {
+  /*if (entity_path == "/" && S3AuthClientOpType::policyvalidation == op_type) {
     entity_path.append(s3_request->get_bucket_name());
-  }
+  }*/
   add_key_val_to_body("ClientAbsoluteUri", entity_path);
 
   // get the query paramters in a map
